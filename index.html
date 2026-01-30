@@ -26,7 +26,8 @@
       <li>Ещё один элемент</li>
     </ul>
     <ul>
-      <li>Пункт 1
+      <li>
+        Пункт 1
         <ol>
           <li>Вложенный 1</li>
           <li>Вложенный 2</li>
@@ -47,12 +48,13 @@
       <li>Готовить еду</li>
     </ul>
 
-    <ul>Разминка
-        <ol>
-          <li>Упражнения для шеи</li>
-          <li>Разминка для рук</li>
-          <li>Отжимания</li>
-        </ol>
+    <ul>
+      Разминка
+      <ol>
+        <li>Упражнения для шеи</li>
+        <li>Разминка для рук</li>
+        <li>Отжимания</li>
+      </ol>
     </ul>
 
     <p id="intro">Это абзац с id</p>
@@ -60,31 +62,31 @@
     <p class="highLight big-text spaced">...</p>
     <span title="Это подсказка">Наведи на меня</span>
 
-    <p style="color: blue; font-size: 20px;">Синий текст</p>
+    <p style="color: blue; font-size: 20px">Синий текст</p>
     <p><a href="https://google.com">Google</a></p>
-    <img src="#" alt="Котик">
-    <img src="#" width="200" height="150">
+    <img src="#" alt="Котик" />
+    <img src="#" width="200" height="150" />
     <p><a href="https://yandex.ru" target="_blank">Открыть в новой вкладке</a></p>
     <p>
-      <input type="number">
-      <input type="password">
-      <input type="email">
+      <input type="number" />
+      <input type="password" />
+      <input type="email" />
     </p>
-    <p><input type="text" placeholder="Введите имя"></p>
+    <p><input type="text" placeholder="Введите имя" /></p>
 
     <h2>Примеры атрибутов</h2>
-    <p id="main-text" class="highlighted" title="Это всплывающая подсказка"> Этот абзац содержит id, class и title. </p>
-    <p> <a href="https://example.com" target="_blank" title="Откроется в новой вкладке">Кликни меня</a></p>
-    <p><img src="https://placehold.co/150" alt="Пример изображения" width="150"></p>
+    <p id="main-text" class="highlighted" title="Это всплывающая подсказка">Этот абзац содержит id, class и title.</p>
+    <p><a href="https://example.com" target="_blank" title="Откроется в новой вкладке">Кликни меня</a></p>
+    <p><img src="https://placehold.co/150" alt="Пример изображения" width="150" /></p>
 
     <h2>Атрибуты HTML</h2>
     <p id="header">Заголовок</p>
     <p class="highlighted">Выделение с использованием классов</p>
     <span title="Происходит с использованием title">Использование подсказок</span>
     <p><a href="https://yandex.ru" target="_blank">Yandex</a></p>
-    <p><img src="https://static.insales-cdn.com/files/1/7297/111705217/original/MAX.jpg" alt="Изображение мессенджера" width="150"></p>
+    <p><img src="https://static.insales-cdn.com/files/1/7297/111705217/original/MAX.jpg" alt="Изображение мессенджера" width="150" /></p>
     <button title="Нажми на меня">Кнопка</button>
-    <p><input type="text" placeholder="Введите ваш город"></p>
+    <p><input type="text" placeholder="Введите ваш город" /></p>
 
     <table border="1">
       <tr>
@@ -116,5 +118,47 @@
         <td>Volgograd</td>
       </tr>
     </table>
+
+    <input type="text" placeholder="Введите имя" />
+    <input type="email" placeholder="Введите email" />
+    <input type="password" placeholder="Введите пароль" />
+    <input type="number" placeholder="Возраст" />
+    <input type="date" />
+    <input type="checkbox" /> Я согласен <input type="radio" name="gender" /> Мужчина <input type="radio" name="gender" />Женщина
+
+    <textarea placeholder="Введите сообщение" rows="4"></textarea>
+
+    <select>
+      <option>ИСП-231</option>
+      <option>ИСП-232</option>
+      <option>ИСП-233</option>
+    </select>
+
+    <button type="submit">Отправить</button>
+    <button type="reset">Очистить</button>
+
+    <label for="username">Ваше имя:</label>
+    <input id="username" type="text" />
+
+    <h2>Пример HTML-формы</h2>
+    <form>
+      <label for="username">Имя:</label>
+      <input id="username" type="text" placeholder="Введите имя:" />
+      <br /><br />
+      <label for="email">Email:</label>
+      <input id="email" type="email" placeholder="example@mail.com" />
+      <br /><br />
+      <label for="city">Город</label>
+      <select id="city">
+        <option>Волгоград</option>
+        <option>Волжский</option>
+        <option>Камышин</option>
+      </select>
+      <br><br>
+      <label for="message">Сообщение:</label>
+      <textarea id="message" rows="4" placeholder="Напишите текст..."></textarea>
+      <br><br>
+      <button type="submit">Отправить</button>
+    </form>
   </body>
 </html>
